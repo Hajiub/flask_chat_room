@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Create | Join Room</title>
+    <link rel="stylesheet" href="">
+{% endblock head %}
+{% block content %}
+<dif class="content">
+    <form action="" method="post" class="all_form">
+        <h3 class="room_label">Enter the Chat Room</h3>
+        <div class = "input_name">
+            <label>Name:</label>
+            <input type="text" name="name" id="user_name" placeholder="Pick a name!" autocomplete="off" value="{{name}}">
+        </div>
+        <div class="join_div">
+            <label>Code:</label>
+            <input type="text" name="code" id="join_input" placeholder="Room code" value="{{ code }}" autocomplete="off">
+            <button type="submit" name="join" class="join_btn">Join a Room</button>
+        </div>
+        <button class="create_btn" type="submit" name="create">Create a Room</button>
+        {% if error_message %}
+          <h4 class="err_msg">{{ error_message }}</h4>  
+        {% endif %}
+        
+    </form>
+</div>
+{% endblock content %}

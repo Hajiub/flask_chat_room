@@ -1,0 +1,77 @@
+@import url('main.css');
+
+.div-el {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: transparent;
+  }
+  
+.message-box {
+    border: 1px solid var(--color-black);
+    border-radius: 10px;
+    background-color: transparent;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: stretch;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.messages {
+    overflow-y: scroll;
+    flex: 1;
+    width: 100%;
+}
+.inputs {
+    padding: 10px;
+    display: flex;
+}
+h2 {
+    text-align: center;
+}
+#MyInput 
+{
+    border: 1px solid black;
+    flex: 1;
+    padding: 12px 5px;
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+    outline: none;
+    border-right:none;
+}
+#send-btn
+{
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+    font-size: 14px;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 12px 16px;
+    transition: 0.5s;
+}
+#send-btn:hover
+{
+    background-color: rgb(99, 255, 16);
+    color:whitesmoke;
+}
+
+.text
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.muted
+{
+    font-size: 10px;
+    color: darkgray;
+}
