@@ -15,7 +15,7 @@ The project is built with the Flask web framework, which provides a lightweight 
 
 ##### . Flask web framework
 
-##### . SocketIO library
+##### . Flask_SocketIO library
 
 ##### . JavaScript
 
