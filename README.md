@@ -30,5 +30,16 @@ Install Python 3.x and pip
 Install the required dependencies by running `pip install -r requirements.txt`
 Start the server by running `python3 app.py`
 Open the web browser and navigate to http://localhost:8080
-# Conclusion
-This Python chat room project provides a simple and intuitive interface for real-time messaging between users. 
+To run the project, follow these steps:
+### Docker
+
+Install Docker on your machine.
+Run the following command to build the Docker image:
+```bash
+docker build -t flask_chat_room .
+```
+Once the image is built, run the following command to start the Docker container:
+```bash
+docker run -p 8080:8080 chat-room-app
+```
+Open your web browser and navigate to http://localhost:8080.
