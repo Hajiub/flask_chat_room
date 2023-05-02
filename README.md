@@ -27,6 +27,14 @@ The project is built with the Flask web framework, which provides a lightweight 
 To run the project, follow these steps:
 
 Install Python 3.x and pip
+```bash
+# cd to the porject folder
+cd flask_chat_room
+# create a python env
+python3 -m venv .env
+# activate the env
+source .env/bin/activate
+```
 Install the required dependencies by running `pip install -r requirements.txt`
 Start the server by running `python3 app.py`
 Open the web browser and navigate to http://localhost:8080
@@ -36,10 +44,17 @@ To run the project, follow these steps:
 Install Docker on your machine.
 Run the following command to build the Docker image:
 ```bash
+# sudo docker build -t flask_chat_room .
 docker build -t flask_chat_room .
 ```
 Once the image is built, run the following command to start the Docker container:
 ```bash
-docker run -p 8080:8080 chat-room-app
+#sudo docker run flask_chat_room
+docker run flask_chat-room
 ```
 Open your web browser and navigate to http://localhost:8080.
+
+Or you can pull the Docker image
+```bash
+docker pull abrahamel/flask_chat_room
+```
